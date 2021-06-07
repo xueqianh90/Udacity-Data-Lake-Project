@@ -6,9 +6,11 @@ Create a database schema and ETL pipeline for a startup called Sparkify to extra
 #### Database Schema Design
 
 > **Fact Table**
+
 >> ***songplays*** - playing records in log data associated with song title, artist name, and song duration time that match from the staging_events and staging_songs tables. 
 
 > **Dimension Tables**
+
 >> ***users*** - users info extracted from staging_events table
 >> ***songs*** - songs info extracted from staging_songs table
 >> ***artists*** - artists info extracted from staging_songs table
