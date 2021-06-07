@@ -24,7 +24,7 @@ def create_spark_session():
 
 def process_song_data(spark, input_data, output_data):
     # get filepath to song data file
-    song_data = os.path.join(input_data, "song_data/A/A/A/*.json")
+    song_data = os.path.join(input_data, "song_data/*/*/*/*.json")
     
     # read song data file
     df = spark.read.json(song_data)
@@ -118,7 +118,7 @@ def process_log_data(spark, input_data, output_data):
 def main():
     spark = create_spark_session()
     input_data = "s3a://udacity-dend/"
-    output_data = "s3://xh-udacity-data-lake-project/"
+    output_data = "s3a://udacity-data-lake-project-zoexh/"
     
     process_song_data(spark, input_data, output_data)    
     process_log_data(spark, input_data, output_data)
