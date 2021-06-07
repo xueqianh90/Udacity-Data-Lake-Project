@@ -12,14 +12,18 @@ Create a database schema and ETL pipeline for a startup called Sparkify to extra
 > **Dimension Tables**
 
 >> ***users*** - users info extracted from staging_events table
+
 >> ***songs*** - songs info extracted from staging_songs table
+
+
 >> ***artists*** - artists info extracted from staging_songs table
+
+
 >> ***time*** - timestamps of records in songplays broken down into specific units
 
-#### ETL Pipeline (files used: sql_queries.py, etl.py)
+#### ETL Pipeline (files used: etl.py)
 
 Get all the needed song and log datasets from from S3. Transform the data and then load data to each tables. 
-
 
 ## Data And Files Overview
 
