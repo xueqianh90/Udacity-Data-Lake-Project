@@ -28,6 +28,7 @@ Get all the needed song and log datasets from from S3. Transform the data and th
 ## Data And Files Overview
 
 **etl.py** - Loads and processes song and log datasets from from S3, and copys and inserts them into tables. 
+
 **dl.cfg** - Contains IAM's credentials
 
 ## How to Run The Python Scripts
